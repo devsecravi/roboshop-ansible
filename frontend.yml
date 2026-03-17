@@ -41,10 +41,10 @@
       src: nginx.conf
       dest: /etc/nginx/nginx.conf
 
-  - name: resatrt nginx
+  - name: Restart nginx
     ansible.builtin.service:
       name: nginx
       state: restarted
-      enabled: yes
+      enabled: true
 
   
