@@ -64,7 +64,7 @@
       type: A
       ttl: 1
     loop: "{{ instances }}"
-    when: action == "destory"
+    when: action == "destroy"
 
 
   
@@ -73,5 +73,5 @@
       state:  absent
       name: "{{ item }}-{{ env }}"
     loop: "{{ instances }}"
-    when: action  ==  "destory"
+    when: action  ==  "destroy"
       
